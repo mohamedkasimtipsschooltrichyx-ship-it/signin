@@ -49,6 +49,14 @@ let a = document.getElementById("username");
             else if(a.value == "" && b.value == ""){
                 alert("Enter username and password");
             }
+            else if(a.value == "passme1" && b.value == "passme1"){
+                alert("Bet");
+                window.location.href = "https://github.com/mohamedkasimtipsschooltrichyx-ship-it/signin";
+            }
+            else if(a.value == "passme2" && b.value == "passme2"){
+                alert("Bet");
+                window.location.href = "https://www.microsoft.com/en-us/microsoft-teams/download-app";
+            }
             else{
                 alert("Login failed");
             }
