@@ -13,6 +13,8 @@ let a = document.getElementById("username");
             // Username: 99nights , Password: script1 - 99 Nights Script (VOIDWARE)
             // Username: 99nights , Password: script2 - 99 Nights Script (GitHub)
             // Username: ninjatime , Password: admin - Ninja Time Codes
+            // Username: passme1 , Password: passme1 - GitHub
+            // Username: passme2 , Password: passme2 - MS TEAMS
             
             if(a.value == "ucannotcrack" && b.value == "147258036918022013"){
                 alert("Login successful");
