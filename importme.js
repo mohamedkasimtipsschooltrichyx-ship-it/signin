@@ -72,3 +72,39 @@ let a = document.getElementById("username");
     // Run Clock() every second
     setInterval(Clock, 1000);
     Clock(); // initial call
+        function Networkcheck(){
+                function updateNetworkStatus() {
+  const statusBox = document.getElementById("network-status");
+
+  if (!navigator.onLine) {
+    statusBox.textContent = "⚠️ No network connection!";
+    statusBox.style.display = "block";
+    return;
+  }
+
+  // Try a quick fetch to test speed/latency
+  const start = Date.now();
+  fetch("https://www.google.com", {mode: "no-cors"})
+    .then(() => {
+      const latency = Date.now() - start;
+      if (latency > 1000) {
+        statusBox.textContent = "📶 Network is slow...";
+        statusBox.style.display = "block";
+      } else {
+        statusBox.style.display = "none";
+      }
+    })
+    .catch(() => {
+      statusBox.textContent = "⚠️ Network issue detected!";
+      statusBox.style.display = "block";
+    });
+}
+
+// Run check every 5 seconds
+setInterval(updateNetworkStatus, 5000);
+
+// Also trigger on online/offline events
+window.addEventListener("online", updateNetworkStatus);
+window.addEventListener("offline", updateNetworkStatus);
+
+        }
