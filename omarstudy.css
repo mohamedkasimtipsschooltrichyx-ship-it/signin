@@ -1,0 +1,71 @@
+body{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.h{
+    position: relative;
+    height: 100vh;
+}
+.container{
+    background: rgba(167,193, 155, 0.3); /* semi-transparent */
+    backdrop-filter: blur(8px);            /* blur behind the div */  
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-self: center;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    border-color: aqua;
+    color:rgb(0, 0, 0);
+}
+.container h1{
+    font-size: 30px;
+    text-align: center;
+}
+.container input{
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+    text-decoration: dashed;
+    border-radius: 15px;
+
+}
+.container input:focus{
+    outline: none;
+    border: 2px solid rgb(255, 18, 18);
+    text-align: top;
+}
+.container button{
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: center;
+    margin-top: 10px;
+}
+.container button:hover{
+    background-color: rgb(219, 175, 175);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    cursor:-moz-grab;
+}
+#clock{
+    top:0;
+    left:0;
+    position: relative;
+    background-color: antiquewhite;
+    color:black;
+    backdrop-filter:blur(8px);
+}
