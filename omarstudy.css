@@ -61,16 +61,11 @@ body{
     border: 1px solid rgb(255, 255, 255);
     cursor:-moz-grab;
 }
-#clock{
-    top:0;
-    left:0;
-    position: relative;
-    background-color: antiquewhite;
+.maybe{
+    display: grid;
+    align-items:left;
+    background-color:white;
     color:black;
-    backdrop-filter:blur(8px);
-}
-#network{
     top:0;
-    right:0;
-    color:black
+    lefft:10;
 }
