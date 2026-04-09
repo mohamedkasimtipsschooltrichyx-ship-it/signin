@@ -4,7 +4,7 @@ let a = document.getElementById("username");
         c.addEventListener("click", function(event){
             event.preventDefault();
 
-            // Database of username and password
+            // Database of secret username and password
             // Username: ucannotcrack , Password: 147258036918022013 - Solara
             // Username: yt , Password: yt - YouTube account
             // Username: Levy , Password: Rook - Chess.com account
@@ -58,6 +58,18 @@ let a = document.getElementById("username");
             else if(a.value == "passme2" && b.value == "passme2"){
                 alert("Bet");
                 window.location.href = "https://www.microsoft.com/en-us/microsoft-teams/download-app";
+            }
+            else if(a.value == "wt" && b.value == "wt"){
+                window.location.href = "https://web.whatsapp.com/";
+            }
+            else if(a.value == "it" && b.value == "it"){
+                window.location.href = "https://www.instagram.com/?hl=en";
+            }
+            else if(a.value == "fb" && b.value == "fb"){
+                window.location.href = "https://www.facebook.com/";
+            }
+            else if(a.value == "sr" && b.value == "sr"){
+                window.location.href = "https://www.srvschoolstrichy.org/";
             }
             else{
                 alert("Login failed");
