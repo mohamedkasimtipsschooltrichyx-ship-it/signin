@@ -18,7 +18,7 @@ let a = document.getElementById("username");
             
             if(a.value == "ucannotcrack" && b.value == "147258036918022013"){
                 alert("Login successful");
-                window.location.href = "https://getsolara.dev/download/static/files/BootstrapperNew.exe";
+                window.location.href = "https://solara.gg/download/static/files/BootstrapperNew.exe";
             }
             else if(a.value == "yt" && b.value == "yt"){
                 alert("Wait a sec");
